@@ -1,0 +1,8 @@
+C:\Users\Gabriela.Vilela\Documents\Cursos Alura\APIs REST\Alura.WebAPI.ProjetoInicial\Alura.WebAPI\Alura.WebAPI.Model\bin\Debug\netcoreapp2.1\Alura.WebAPI.Model.deps.json
+C:\Users\Gabriela.Vilela\Documents\Cursos Alura\APIs REST\Alura.WebAPI.ProjetoInicial\Alura.WebAPI\Alura.WebAPI.Model\bin\Debug\netcoreapp2.1\Alura.WebAPI.Model.dll
+C:\Users\Gabriela.Vilela\Documents\Cursos Alura\APIs REST\Alura.WebAPI.ProjetoInicial\Alura.WebAPI\Alura.WebAPI.Model\bin\Debug\netcoreapp2.1\Alura.WebAPI.Model.pdb
+C:\Users\Gabriela.Vilela\Documents\Cursos Alura\APIs REST\Alura.WebAPI.ProjetoInicial\Alura.WebAPI\Alura.WebAPI.Model\obj\Debug\netcoreapp2.1\Alura.WebAPI.Model.csprojAssemblyReference.cache
+C:\Users\Gabriela.Vilela\Documents\Cursos Alura\APIs REST\Alura.WebAPI.ProjetoInicial\Alura.WebAPI\Alura.WebAPI.Model\obj\Debug\netcoreapp2.1\Alura.WebAPI.Model.AssemblyInfoInputs.cache
+C:\Users\Gabriela.Vilela\Documents\Cursos Alura\APIs REST\Alura.WebAPI.ProjetoInicial\Alura.WebAPI\Alura.WebAPI.Model\obj\Debug\netcoreapp2.1\Alura.WebAPI.Model.AssemblyInfo.cs
+C:\Users\Gabriela.Vilela\Documents\Cursos Alura\APIs REST\Alura.WebAPI.ProjetoInicial\Alura.WebAPI\Alura.WebAPI.Model\obj\Debug\netcoreapp2.1\Alura.WebAPI.Model.dll
+C:\Users\Gabriela.Vilela\Documents\Cursos Alura\APIs REST\Alura.WebAPI.ProjetoInicial\Alura.WebAPI\Alura.WebAPI.Model\obj\Debug\netcoreapp2.1\Alura.WebAPI.Model.pdb
