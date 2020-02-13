@@ -13,4 +13,19 @@
     <ProjectReference Include="..\Alura.WebAPI.Model\Alura.WebAPI.Model.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Compile Update="IRepository.cs">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Update="LeituraContext.cs">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Update="LivroConfiguration.cs">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Update="RepositorioBaseEF.cs">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+  </ItemGroup>
+
 </Project>

@@ -8,4 +8,19 @@
     <PackageReference Include="Microsoft.IdentityModel.Tokens" Version="5.2.4" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Compile Update="ITokenFactory.cs">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Update="LoginModel.cs">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Update="SigningConfigurations.cs">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Update="TokenConfigurations.cs">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+  </ItemGroup>
+
 </Project>
