@@ -11,7 +11,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace Alura.WebAPI.WebApp.Api
 {
     [ApiController]
-    [Route("[controller]")]
+    [Route("api/[controller]")]
     public class LivroController : ControllerBase
     {
         private readonly IRepository<Livro> _repo;
@@ -29,6 +29,19 @@ namespace Alura.WebAPI.WebApp.Api
             return Ok(lista);
         }
 
+        [HttpGet("{id}/capa")]
+        public IActionResult ImagemCapa(int id)
+        {
+            byte[] img = _repo.All
+               .Where(l => l.Id == id)
+               .Select(l => l.ImagemCapa)
+               .FirstOrDefault();
+            if (img != null)
+            {
+                return File(img, "image/png");
+            }
+            return File("~/images/capas/capa-vazia.png", "image/png");
+        }
 
         [HttpGet("{id}")]
         public IActionResult Recuperar(int id)
