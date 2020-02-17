@@ -9,11 +9,24 @@
       "Alura.WebAPI.DAL.Livros/1.0.0": {
         "dependencies": {
           "Alura.WebAPI.Model": "1.0.0",
+          "Microsoft.AspNetCore.Authorization": "2.1.0",
           "Microsoft.EntityFrameworkCore": "2.1.0",
           "Microsoft.EntityFrameworkCore.Relational": "2.1.0"
         },
         "runtime": {
           "Alura.WebAPI.DAL.Livros.dll": {}
+        }
+      },
+      "Microsoft.AspNetCore.Authorization/2.1.0": {
+        "dependencies": {
+          "Microsoft.Extensions.Logging.Abstractions": "2.1.0",
+          "Microsoft.Extensions.Options": "2.1.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.AspNetCore.Authorization.dll": {
+            "assemblyVersion": "2.1.0.0",
+            "fileVersion": "2.1.0.18136"
+          }
         }
       },
       "Microsoft.AspNetCore.Http.Features/2.1.0": {
@@ -382,6 +395,7 @@
       },
       "Alura.WebAPI.Model/1.0.0": {
         "dependencies": {
+          "Microsoft.AspNetCore.Authorization": "2.1.0",
           "Microsoft.AspNetCore.Http.Features": "2.1.0"
         },
         "runtime": {
@@ -395,6 +409,13 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "Microsoft.AspNetCore.Authorization/2.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-QUMtMVY7mQeJWlP8wmmhZf1HEGM/V8prW/XnYeKDpEniNBCRw0a3qktRb9aBU0vR+bpJwWZ0ibcB8QOvZEmDHQ==",
+      "path": "microsoft.aspnetcore.authorization/2.1.0",
+      "hashPath": "microsoft.aspnetcore.authorization.2.1.0.nupkg.sha512"
     },
     "Microsoft.AspNetCore.Http.Features/2.1.0": {
       "type": "package",

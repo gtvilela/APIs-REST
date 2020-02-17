@@ -42,9 +42,9 @@
       "frameworks": {
         "netcoreapp2.1": {
           "dependencies": {
-            "Microsoft.AspNet.WebApi.Core": {
+            "Microsoft.AspNetCore.Authorization": {
               "target": "Package",
-              "version": "[5.2.7, )"
+              "version": "[2.1.0, )"
             },
             "Microsoft.AspNetCore.Http.Features": {
               "target": "Package",

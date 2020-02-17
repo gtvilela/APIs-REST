@@ -3,6 +3,7 @@ using System.Linq;
 
 namespace Alura.ListaLeitura.Modelos
 {
+    
     public static class TipoListaLeituraExtensions
     {
         private static Dictionary<string, TipoListaLeitura> mapa =
