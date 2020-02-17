@@ -1,9 +1,9 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
+using System.Xml.Serialization;
 
 namespace Alura.ListaLeitura.Modelos
 {
-    
     public static class TipoListaLeituraExtensions
     {
         private static Dictionary<string, TipoListaLeitura> mapa =

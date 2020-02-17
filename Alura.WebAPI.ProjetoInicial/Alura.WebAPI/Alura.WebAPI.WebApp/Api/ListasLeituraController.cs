@@ -7,12 +7,9 @@ using Alura.ListaLeitura.Persistencia;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Lista = Alura.ListaLeitura.Modelos.ListaLeitura;
-using RouteAttribute = Microsoft.AspNetCore.Mvc.RouteAttribute;
-
-// For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
 namespace Alura.WebAPI.WebApp.Api
-{   
+{
     [Authorize]
     [ApiController]
     [Route("api/[controller]")]
@@ -20,11 +17,9 @@ namespace Alura.WebAPI.WebApp.Api
     {
         private readonly IRepository<Livro> _repo;
 
-
         public ListasLeituraController(IRepository<Livro> repository)
         {
             _repo = repository;
-
         }
 
         private Lista CriaLista(TipoListaLeitura tipo)
@@ -33,9 +28,9 @@ namespace Alura.WebAPI.WebApp.Api
             {
                 Tipo = tipo.ParaString(),
                 Livros = _repo.All
-                .Where(l => l.Lista == tipo)
-                .Select(l => l.ToApi())
-                .ToList()
+                    .Where(l => l.Lista == tipo)
+                    .Select(l => l.ToApi())
+                    .ToList()
             };
         }
 

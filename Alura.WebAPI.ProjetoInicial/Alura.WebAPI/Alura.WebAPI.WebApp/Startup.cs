@@ -47,8 +47,8 @@ namespace Alura.ListaLeitura.WebApp
             services.AddTransient<IRepository<Livro>, RepositorioBaseEF<Livro>>();
 
             services.AddMvc(options => {
-                options.OutputFormatters.Add(new LivroCsvFormartter());
-            }).AddXmlDataContractSerializerFormatters();
+                options.OutputFormatters.Add(new LivroCsvFormatter());
+            }).AddXmlSerializerFormatters();
 
             services.AddAuthentication(options =>
             {
@@ -60,10 +60,11 @@ namespace Alura.ListaLeitura.WebApp
                     ValidateIssuer = true,
                     ValidateAudience = true,
                     ValidateLifetime = true,
-                    IssuerSigningKey = new SymmetricSecurityKey(System.Text.Encoding.UTF8.GetBytes("alura-webapi-authentication-valida")),
+                    ValidateIssuerSigningKey = true,
+                    IssuerSigningKey = new SymmetricSecurityKey(System.Text.Encoding.UTF8.GetBytes("alura-webapi-authentication-valid")),
                     ClockSkew = TimeSpan.FromMinutes(5),
                     ValidIssuer = "Alura.WebApp",
-                    ValidAudience = "Postman"
+                    ValidAudience = "Postman",
                 };
             });
         }

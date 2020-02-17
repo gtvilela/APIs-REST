@@ -1,12 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IdentityModel.Tokens.Jwt;
 using System.Linq;
+using System.Security.Claims;
 using System.Threading.Tasks;
 using Alura.ListaLeitura.Seguranca;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
-
-// For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+using Microsoft.IdentityModel.Tokens;
 
 namespace Alura.WebAPI.WebApp.Api
 {
@@ -21,19 +22,33 @@ namespace Alura.WebAPI.WebApp.Api
             _signInManager = signInManager;
         }
 
+        [HttpPost]
         public async Task<IActionResult> Token(LoginModel model)
         {
             if (ModelState.IsValid)
             {
-
-                var resultado = await _signInManager.PasswordSignInAsync(model.Login, model.Password, true, true);
-
-                if (resultado.Succeeded)
+                var result = await _signInManager.PasswordSignInAsync(model.Login, model.Password, true, true);
+                if (result.Succeeded)
                 {
-                    //cria Token(header + payload + signature)
+                    //cria token (header + payload >> direitos + signature)
+                    var direitos = new[]
+                    {
+                        new Claim(JwtRegisteredClaimNames.Sub, model.Login),
+                        new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString())
+                    };
 
-                    var tokenString = "";
+                    var chave = new SymmetricSecurityKey(System.Text.Encoding.UTF8.GetBytes("alura-webapi-authentication-valid"));
+                    var credenciais = new SigningCredentials(chave, SecurityAlgorithms.HmacSha256);
 
+                    var token = new JwtSecurityToken(
+                        issuer: "Alura.WebApp",
+                        audience: "Postman",
+                        claims: direitos,
+                        signingCredentials: credenciais,
+                        expires: DateTime.Now.AddMinutes(30)
+                    );
+
+                    var tokenString = new JwtSecurityTokenHandler().WriteToken(token);
                     return Ok(tokenString);
                 }
                 return Unauthorized(); //401

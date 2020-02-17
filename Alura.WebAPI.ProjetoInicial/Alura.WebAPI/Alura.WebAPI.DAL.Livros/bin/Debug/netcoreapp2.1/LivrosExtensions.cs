@@ -33,8 +33,6 @@ namespace Alura.ListaLeitura.Modelos
             };
         }
 
-     
-
         public static LivroApi ToApi(this Livro livro)
         {
             return new LivroApi
@@ -44,7 +42,7 @@ namespace Alura.ListaLeitura.Modelos
                 Subtitulo = livro.Subtitulo,
                 Resumo = livro.Resumo,
                 Autor = livro.Autor,
-                Capa = $"/api/capas/{livro.Id}",
+                ImagemCapa = $"/api/livros/{livro.Id}/capa",
                 Lista = livro.Lista.ParaString()
             };
         }

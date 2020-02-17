@@ -9,40 +9,38 @@ using System.Threading.Tasks;
 
 namespace Alura.WebAPI.WebApp.Formatters
 {
-    public class LivroCsvFormartter : TextOutputFormatter
+    public class LivroCsvFormatter : TextOutputFormatter
     {
-        
-        public LivroCsvFormartter()
+
+        public LivroCsvFormatter()
         {
-            var textcsvMedaType = MediaTypeHeaderValue.Parse("text/csv");
+            var textCsvMediaType = MediaTypeHeaderValue.Parse("text/csv");
             var appCsvMediaType = MediaTypeHeaderValue.Parse("application/csv");
-            SupportedMediaTypes.Add(textcsvMedaType);
+            SupportedMediaTypes.Add(textCsvMediaType);
             SupportedMediaTypes.Add(appCsvMediaType);
             SupportedEncodings.Add(Encoding.UTF8);
         }
 
         protected override bool CanWriteType(Type type)
         {
-            return type == typeof(LivroUpload);
+            return type == typeof(LivroApi);
         }
 
         public override Task WriteResponseBodyAsync(OutputFormatterWriteContext context, Encoding selectedEncoding)
         {
             var livroEmCsv = "";
 
-            if (context.Object is LivroUpload)
+            if (context.Object is LivroApi)
             {
-                var livro = context.Object as LivroUpload;
+                var livro = context.Object as LivroApi;
 
                 livroEmCsv = $"{livro.Titulo};{livro.Subtitulo};{livro.Autor};{livro.Lista}";
             }
 
             using (var escritor = context.WriterFactory(context.HttpContext.Response.Body, selectedEncoding))
             {
-               return escritor.WriteAsync(livroEmCsv);
-            }
-            
-                    //escritor.Close()
+                return escritor.WriteAsync(livroEmCsv);
+            } //escritor.Close()
         }
     }
 }
