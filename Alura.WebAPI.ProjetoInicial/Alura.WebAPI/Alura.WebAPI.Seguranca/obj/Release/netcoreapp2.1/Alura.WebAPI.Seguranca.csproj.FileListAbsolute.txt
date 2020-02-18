@@ -1,0 +1,12 @@
+C:\Users\Gabriela.Vilela\Documents\Cursos Alura\APIs REST\Alura.WebAPI.ProjetoInicial\Alura.WebAPI\Alura.WebAPI.Seguranca\bin\Release\netcoreapp2.1\ITokenFactory.cs
+C:\Users\Gabriela.Vilela\Documents\Cursos Alura\APIs REST\Alura.WebAPI.ProjetoInicial\Alura.WebAPI\Alura.WebAPI.Seguranca\bin\Release\netcoreapp2.1\LoginModel.cs
+C:\Users\Gabriela.Vilela\Documents\Cursos Alura\APIs REST\Alura.WebAPI.ProjetoInicial\Alura.WebAPI\Alura.WebAPI.Seguranca\bin\Release\netcoreapp2.1\SigningConfigurations.cs
+C:\Users\Gabriela.Vilela\Documents\Cursos Alura\APIs REST\Alura.WebAPI.ProjetoInicial\Alura.WebAPI\Alura.WebAPI.Seguranca\bin\Release\netcoreapp2.1\TokenConfigurations.cs
+C:\Users\Gabriela.Vilela\Documents\Cursos Alura\APIs REST\Alura.WebAPI.ProjetoInicial\Alura.WebAPI\Alura.WebAPI.Seguranca\bin\Release\netcoreapp2.1\Alura.WebAPI.Seguranca.deps.json
+C:\Users\Gabriela.Vilela\Documents\Cursos Alura\APIs REST\Alura.WebAPI.ProjetoInicial\Alura.WebAPI\Alura.WebAPI.Seguranca\bin\Release\netcoreapp2.1\Alura.WebAPI.Seguranca.dll
+C:\Users\Gabriela.Vilela\Documents\Cursos Alura\APIs REST\Alura.WebAPI.ProjetoInicial\Alura.WebAPI\Alura.WebAPI.Seguranca\bin\Release\netcoreapp2.1\Alura.WebAPI.Seguranca.pdb
+C:\Users\Gabriela.Vilela\Documents\Cursos Alura\APIs REST\Alura.WebAPI.ProjetoInicial\Alura.WebAPI\Alura.WebAPI.Seguranca\obj\Release\netcoreapp2.1\Alura.WebAPI.Seguranca.csprojAssemblyReference.cache
+C:\Users\Gabriela.Vilela\Documents\Cursos Alura\APIs REST\Alura.WebAPI.ProjetoInicial\Alura.WebAPI\Alura.WebAPI.Seguranca\obj\Release\netcoreapp2.1\Alura.WebAPI.Seguranca.AssemblyInfoInputs.cache
+C:\Users\Gabriela.Vilela\Documents\Cursos Alura\APIs REST\Alura.WebAPI.ProjetoInicial\Alura.WebAPI\Alura.WebAPI.Seguranca\obj\Release\netcoreapp2.1\Alura.WebAPI.Seguranca.AssemblyInfo.cs
+C:\Users\Gabriela.Vilela\Documents\Cursos Alura\APIs REST\Alura.WebAPI.ProjetoInicial\Alura.WebAPI\Alura.WebAPI.Seguranca\obj\Release\netcoreapp2.1\Alura.WebAPI.Seguranca.dll
+C:\Users\Gabriela.Vilela\Documents\Cursos Alura\APIs REST\Alura.WebAPI.ProjetoInicial\Alura.WebAPI\Alura.WebAPI.Seguranca\obj\Release\netcoreapp2.1\Alura.WebAPI.Seguranca.pdb

@@ -1,0 +1,6 @@
+C:\Users\Gabriela.Vilela\Documents\Cursos Alura\APIs REST\Alura.WebAPI.ProjetoInicial\Alura.WebAPI\Teste\obj\Release\netcoreapp3.1\Alura.WebAPI.AuthProvider.csprojAssemblyReference.cache
+C:\Users\Gabriela.Vilela\Documents\Cursos Alura\APIs REST\Alura.WebAPI.ProjetoInicial\Alura.WebAPI\Teste\obj\Release\netcoreapp3.1\staticwebassets\Alura.WebAPI.AuthProvider.StaticWebAssets.Manifest.cache
+C:\Users\Gabriela.Vilela\Documents\Cursos Alura\APIs REST\Alura.WebAPI.ProjetoInicial\Alura.WebAPI\Teste\obj\Release\netcoreapp3.1\staticwebassets\Alura.WebAPI.AuthProvider.StaticWebAssets.xml
+C:\Users\Gabriela.Vilela\Documents\Cursos Alura\APIs REST\Alura.WebAPI.ProjetoInicial\Alura.WebAPI\Teste\obj\Release\netcoreapp3.1\Alura.WebAPI.AuthProvider.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Gabriela.Vilela\Documents\Cursos Alura\APIs REST\Alura.WebAPI.ProjetoInicial\Alura.WebAPI\Teste\obj\Release\netcoreapp3.1\Alura.WebAPI.AuthProvider.AssemblyInfoInputs.cache
+C:\Users\Gabriela.Vilela\Documents\Cursos Alura\APIs REST\Alura.WebAPI.ProjetoInicial\Alura.WebAPI\Teste\obj\Release\netcoreapp3.1\Alura.WebAPI.AuthProvider.AssemblyInfo.cs
